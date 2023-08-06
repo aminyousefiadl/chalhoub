@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Acceptable Pagination renders to match snapshot 1`] = `
+<body>
+  <div>
+    <nav
+      aria-label="Page navigation example "
+      class="flex justify-center mt-8"
+    >
+      <ul
+        class="inline-flex -space-x-px text-sm"
+      >
+        <li
+          class="cursor-pointer flex items-center justify-center px-3 h-8 ml-0 leading-tight text-gray-500 bg-white border border-gray-300 rounded-l-lg hover:bg-gray-100 hover:text-gray-700  "
+        >
+          Previous
+        </li>
+        <li
+          class="bg-gray-200 text-primary cursor-pointer flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700  "
+        >
+          1
+        </li>
+        <li
+          class="cursor-pointer flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 rounded-r-lg hover:bg-gray-100 hover:text-gray-700  "
+        >
+          Next
+        </li>
+      </ul>
+    </nav>
+  </div>
+</body>
+`;

@@ -1,0 +1,20 @@
+version: "3"
+services:
+  api:
+    build:
+      context: ./api
+    container_name: api
+    env_file: api/.env
+    restart: always
+    ports:
+      - "3001:3001"
+  www:
+    build:
+      context: ./www
+    depends_on:
+      - api
+    env_file: www/.production.env
+    container_name: www
+    restart: always
+    ports:
+      - "3000:3000"

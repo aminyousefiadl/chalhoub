@@ -1,0 +1,39 @@
+type Query {
+  products(
+    page: Int
+    limit: Int
+    color: String
+    price: Price
+    sort: Status
+  ): ProductData!
+}
+
+enum Status {
+  RECOMMENDED
+  CHEAPEST
+  NEW
+}
+
+type ProductData {
+  count: Int
+  data: [Product!]!
+  totalCount: Int
+  nextPage: Int
+  prevPage: Int
+  totalPages: Int
+}
+type Product {
+  _id: ID!
+  title: String!
+  price: Int
+  color: String
+  brand: String
+  imageUrl: String
+  recommended: Boolean
+  createdAt: String
+}
+
+input Price {
+  min: Int
+  max: Int
+}
